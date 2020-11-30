@@ -19,7 +19,16 @@ const gorestServices = {
     const {data} = user;
     return data;
     
+  },
+
+  filterUsers: async (name)=> {
+    user = await axios.get(`https://gorest.co.in/public-api/users?name=${name}`)
+    const {data} = user;
+    return data;
+    
   }
+
+
 }
 
 module.exports = gorestServices;

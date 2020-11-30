@@ -5,7 +5,8 @@ const routes = express.Router();
 
 routes.get("/", controller.welcome)
 routes.get("/users", controller.getAllUsers)
-routes.get("/users/:id", controller.getOneUsers)
+routes.get("/user/:id", controller.getOneUsers)
+routes.get("/users/:name", controller.filterUsers)
 
 
 module.exports = routes;
