@@ -12,4 +12,6 @@ app.use(bodyParser.json());
 // Routes
 app.use("/api", appRoutes);
 
-app.listen(config.port, () => console.log(`Server started at ${config.port}`))
+app.listen(config.port, () => console.log(`Server started at ${config.port}`));
+
+module.exports = app;
